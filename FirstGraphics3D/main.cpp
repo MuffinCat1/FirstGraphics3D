@@ -1,4 +1,5 @@
-#include "olcConsoleGameEngineGL.h"
+//#include "olcConsoleGameEngine.h" //For run it on the console
+#include "olcConsoleGameEngineGL.h" // For run it in a window like openGL
 #include <fstream>
 #include <strstream>
 #include <algorithm>
