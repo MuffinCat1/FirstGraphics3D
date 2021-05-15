@@ -505,10 +505,8 @@ public:
 	bool OnUserCreate() override
 	{
 		pDepthBuffer = new float[ScreenWidth() * ScreenHeight()];
-
-		// Load object file
-		//meshCube.LoadFromObjectFile("mountains.obj");
-
+		
+		// Create a Cube
 		//meshCube.tris = {
 
 		//	// SOUTH
@@ -536,9 +534,11 @@ public:
 		//	{ 1.0f, 0.0f, 1.0f, 1.0f,    0.0f, 0.0f, 0.0f, 1.0f,    1.0f, 0.0f, 0.0f, 1.0f,		0.0f, 1.0f, 1.0f,		1.0f, 0.0f, 1.0f,		1.0f, 1.0f, 1.0f,},
 
 		//};
-
+		
+		// Load object file
 		meshCube.LoadFromObjectFile("mountains.obj", false);
-
+		
+		//Create a Sprite Texture
 		//sprTex1 = new olcSprite(L"fps_lamp1.spr");
 
 		// Projection Matrix
