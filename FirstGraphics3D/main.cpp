@@ -128,7 +128,7 @@ struct mat4x4
 	float m[4][4] = { 0 };
 };
 
-#pragma warning (disable : 4244 26451 6385 4715 6029 6285 6001 6054 26495)
+#pragma warning (disable : 4244 26451)
 class olsEngine3D : public olcConsoleGameEngine
 {
 public:
@@ -539,8 +539,8 @@ public:
 		// Load object file
 		meshCube.LoadFromObjectFile("mountains.obj", false);
 		
-		//Create a Sprite Texture
-		//sprTex1 = new olcSprite(L"fps_lamp1.spr");
+		//Create a Sprite Texture --> fileName.spr --> Sprite File
+		//sprTex1 = new olcSprite(L"texture.spr");
 
 		// Projection Matrix
 		matProj = Matrix_MakeProjection(90.0f, (float)ScreenHeight() / (float)ScreenWidth(), 0.1f, 1000.0f);
